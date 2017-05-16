@@ -1,5 +1,11 @@
 # perc2ratio
+
 a small module to convert percentages to ratios
+
+## What it does?
+
+Pass a percentage (as a number) to the module, and get back a ratio (as an array).
+The module will calculate the smallest possible ratio while maintaining both sides as **whole** numbers.
 
 ## How to use it?
 
