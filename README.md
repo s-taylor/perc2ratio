@@ -3,6 +3,8 @@ a small module to convert percentages to ratios
 
 ## How to use it?
 
+First `npm install --save perc2ratio` OR `yarn add perc2ratio`
+
 ```
 const perc2ratio = require('perc2ratio');
 
