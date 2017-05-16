@@ -15,7 +15,7 @@ perc2ratio(50); // returns [1, 1]
 
 ## Args
 
-perc2ratio singular argument must be...
+perc2ratio's singular argument must be...
 
 - a number (not a string!)
 - in the range 1 - 99 (It will throw an error on any number outside this range, note 0 and 100 cannot produce valid ratios!)
