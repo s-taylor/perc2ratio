@@ -12,3 +12,27 @@ test('it must return correct ratio for 5%', (t) => {
 test('it must return correct ratio for 50%', (t) => {
   t.deepEqual(toRatio(50), [1, 1]);
 });
+
+test('it must return correct ratio for 1%', (t) => {
+  t.deepEqual(toRatio(1), [1, 99]);
+});
+
+test('it must error when 100', (t) => {
+  t.throws(
+    () => toRatio(100),
+    Error,
+    'Percentage must be within range 1-99'
+  );
+});
+
+test('it must error when 0', (t) => {
+  t.throws(
+    () => toRatio(0),
+    Error,
+    'Percentage must be within range 1-99'
+  );
+});
+
+//test('it must error when percentage is not a number', (t) => {
+  //t.deepEqual(toRatio('50%'), [1, 99]);
+//});
