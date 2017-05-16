@@ -33,6 +33,18 @@ test('it must error when 0', (t) => {
   );
 });
 
-//test('it must error when percentage is not a number', (t) => {
-  //t.deepEqual(toRatio('50%'), [1, 99]);
-//});
+test('it must error when percentage is not a whole number', (t) => {
+  t.throws(
+    () => toRatio(99.9),
+    Error,
+    'Percentage must be a whole number'
+  );
+});
+
+test('it must error when percentage is not a number', (t) => {
+  t.throws(
+    () => toRatio('50'),
+    Error,
+    'Percentage must be a number'
+  );
+});

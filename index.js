@@ -1,7 +1,9 @@
 const isWhole = num => num % 1 === 0;
 
 const toRatio = (perc) => {
+  if (typeof perc !== 'number') throw new Error('Percentage must be a number');
   if (perc <= 0 || perc >= 100) throw new Error('Percentage must be within range 1-99');
+  if (!isWhole(perc)) throw new Error('Percentage must be whole number');
 
   const x = perc;
   const y = 100 - perc;
