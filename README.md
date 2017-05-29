@@ -11,7 +11,7 @@ The module will calculate the smallest possible ratio while maintaining both sid
 
 First `npm install --save perc2ratio` OR `yarn add perc2ratio`
 
-```
+```js
 const perc2ratio = require('perc2ratio');
 
 perc2ratio(80); // returns [4, 1]
